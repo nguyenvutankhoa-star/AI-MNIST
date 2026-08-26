@@ -1,0 +1,30 @@
+NHẬT KÝ HỌC TẬP - TASK 01
+Ngày: 26/08/2026
+
+1. Quản lý mã nguồn với Git & GitHub
+
+Nắm vững vòng lặp cập nhật code cơ bản: khởi tạo (git init), đóng gói (git add .), ghi chú (git commit) và đẩy mã nguồn lên kho lưu trữ (git push).
+
+Biết cách kết nối môi trường máy tính với kho GitHub qua lệnh git remote, đồng thời hiểu được "quy trình vàng" git clone giúp tối ưu hiệu suất làm việc.
+
+Hiểu được bản chất cảnh báo định dạng xuống dòng (LF vs CRLF) khi chuyển đổi file giữa hệ điều hành Linux (Google Colab) và Windows.
+
+2. Tư duy triển khai Mô hình AI
+
+Phân biệt rõ vai trò cốt lõi: Máy tính cá nhân dùng để viết code và kiểm tra logic (debug), trong khi Server/Cloud đảm nhiệm việc huấn luyện (train) mô hình quy mô lớn.
+
+Nắm bắt kỹ thuật "Toy Dataset" (trích xuất tập dữ liệu nhỏ) để chạy thử nghiệm và kiểm thử tính đúng đắn của code trên máy tính mà không gây quá tải hệ thống.
+
+3. Thiết lập Môi trường Lập trình trên VS Code
+
+Thấu hiểu bản chất định dạng lưu trữ của file .ipynb (Jupyter Notebook) và cách tích hợp vào VS Code để lập trình AI cục bộ (offline).
+
+Nhận thức rõ tầm quan trọng của Môi trường ảo (Virtual Environment - .venv) giúp dự án độc lập, tránh xung đột thư viện và tối ưu hóa không gian ổ C.
+
+Làm chủ trình quản lý gói pip và lệnh nội trú %pip để cài đặt thành công hệ sinh thái thư viện AI: Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow và cầu nối ipykernel.
+
+4. Kỹ năng Xử lý lỗi (Debugging)
+
+Sử dụng hiệu quả cú pháp try-except để cô lập, kiểm tra trạng thái và phát hiện lỗi của từng thư viện độc lập.
+
+Vượt qua các xung đột phức tạp về phiên bản Python (loại bỏ MSYS2, trỏ đúng bản Python chuẩn) và biết cách rà soát, dọn dẹp dung lượng ổ đĩa.
