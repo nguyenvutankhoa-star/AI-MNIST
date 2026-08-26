@@ -1,0 +1,27 @@
+NHẬT KÝ HỌC TẬP - TASK 01
+Ngày: 25/08/2026
+
+1. Mục tiêu:
+
+Làm quen môi trường Google Colab và các thư viện cần thiết trong việc tiếp cận với AI
+
+2. Kiến thức mới thu được:
+
+Google Colab: 
+
+	Là dịch vụ đám mây mien phí của GG, tích hợp rất nhiều các tính năng, công cụ cho các lập trình viên
+	
+	Chạy code Python trên server Google. Các ô (cell) dùng chung bộ nhớ, chỉ cần chạy lệnh import thư viện 1 lần ở ô đầu tiên.
+
+Các thu viện cần thiết:
+
+	TensorFlow & Keras: TensorFlow là nền tảng lõi xử lý tính toán AI mạnh mẽ. Keras là bộ giao diện cấp cao (API) bọc bên ngoài 	TensorFlow, giúp viết code AI ngắn gọn và dễ hiểu hơn.
+
+	Seaborn: một thư viện vẽ và xử lý biểu đồ phức tạp tốt hơn matplotlib
+
+	Nhóm thư viện Kslearn: cung cấp các chức năng chính đối với việc xử lý data
+
+
+Bộ dữ liệu MNIST: Chứa 70.000 ảnh chuẩn hóa của chữ số viết tay từ 0-9.
+
+
