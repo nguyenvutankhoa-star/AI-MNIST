@@ -1,0 +1,36 @@
+NHẬT KÝ HỌC TẬP - TASK 02
+Ngày: 30/08/2026
+
+1. Mục tiêu:
+
+Xây dựng thành công kiến trúc mạng nơ-ron tích chập (CNN) thông qua giao diện Keras của TensorFlow để phân loại và nhận diện bộ dữ liệu ảnh MNIST.  
+
+2. Kiến thức mới thu được:
+
+Kiến trúc tổng quan (CNN & Sequential):
+
+	Mô hình CNN: Mạng nơ-ron mô phỏng mắt người, giữ nguyên không gian 2D của bức ảnh để trích xuất từng đặc trưng nhỏ (góc, cạnh) 	thay vì đập phẳng ngay từ đầu.
+
+	Sequential: Khung xương của Keras, tạo ra một "băng chuyền" ép dữ liệu ảnh chạy thẳng qua các trạm (layers) theo đúng một luồng 	tuần tự. 
+
+Các trạm xử lý (Layers) cốt lõi:
+
+	Input: Trạm kiểm duyệt cổng, đảm bảo dữ liệu đầu vào tuân thủ đúng kích thước (ví dụ: ảnh 28x28 và 1 kênh màu trắng đen).
+
+	Conv2D: Đội chuyên gia trích xuất đặc trưng bằng cách dùng "kính lúp" (kernel_size) trượt dọc bức ảnh để tìm các mẫu hình (đường 	thẳng, đường cong).
+
+	MaxPooling2D: Trạm nén dữ liệu, loại bỏ chi tiết thừa và chỉ giữ lại điểm ảnh nổi bật nhất để mô hình tính toán nhẹ hơn.
+
+	Flatten: Trạm "cán phẳng", biến cấu trúc ma trận 2D thành một dải băng 1D để tương thích với bộ não suy luận phía sau.
+
+	Dense: "Bồi thẩm đoàn" trung tâm gồm các nơ-ron kết nối chặt chẽ để tổng hợp mọi manh mối và đưa ra quyết định dự đoán chữ 	số.
+
+	Dropout: Kỹ thuật chống "học vẹt" (Overfitting) bằng cách tắt đi ngủ ngẫu nhiên một phần nơ-ron trong lúc huấn luyện, ép mô hình 	về 0, giúp máy tính hội tụ đặc trưng nhanh và chính xác.
+
+Các công cụ bổ trợ (Activation & Debugging):
+
+	relu: Bộ lọc năng lượng tích cực, chuyển các giá trị âm (không có đặc trưng) về 0, giúp máy tính hội tụ đặc trưng nhanh và chính 	xác.
+
+	softmax: Bắt buộc nằm ở lớp Output, có nhiệm vụ ép các điểm số thô thành dạng tỷ lệ phần trăm (tổng bằng 100%) để chốt kết quả dễ 	hiểu.
+
+	model.summary(): Lệnh dùng để yêu cầu máy tính in ra bảng tóm tắt "bản thiết kế", hiển thị kích thước đầu ra và tổng số lượng biến 	số (Parameters) khổng lồ của mô hình.
