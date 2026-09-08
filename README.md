@@ -2,6 +2,8 @@
 
 Một dự án Trí tuệ Nhân tạo (AI) cơ bản giúp phân loại và nhận diện các chữ số viết tay từ 0 đến 9 sử dụng bộ dữ liệu kinh điển MNIST. 
 
+<img src="mohinh.jpg" alt="Mô hình chuẩn hóa project" width="100%">
+
 ## Trực quan hóa dữ liệu (Data Visualization)
 Dưới đây là mô phỏng cách máy tính "nhìn" các chữ số từ 0 đến 9 dưới dạng ma trận điểm ảnh (pixel):
 
