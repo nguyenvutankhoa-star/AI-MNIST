@@ -7,11 +7,11 @@ Dưới đây là mô phỏng cách máy tính "nhìn" các chữ số từ 0 đ
 
 | 0 | 1 | 2 | 3 | 4 |
 |:---:|:---:|:---:|:---:|:---:|
-| ![Số 0](path/to/image_0.png) | ![Số 1](image_6b3b09.png) | ![Số 2](path/to/image_2.png) | ![Số 3](path/to/image_3.png) | ![Số 4](path/to/image_4.png) |
+| ![Số 0](image_0.png) | ![Số 1](image_1.png) | ![Số 2](image_2.png) | ![Số 3](image_3.png) | ![Số 4](image_4.png) |
 
 | 5 | 6 | 7 | 8 | 9 |
 |:---:|:---:|:---:|:---:|:---:|
-| ![Số 5](path/to/image_5.png) | ![Số 6](path/to/image_6.png) | ![Số 7](path/to/image_7.png) | ![Số 8](path/to/image_8.png) | ![Số 9](path/to/image_9.png) |
+| ![Số 5](image_5.png) | ![Số 6](image_6.png) | ![Số 7](image_7.png) | ![Số 8](image_8.png) | ![Số 9](image_9.png) |
 
 ## Công nghệ sử dụng (Tech Stack) 
 *   **Ngôn ngữ:** Python 3.13 
