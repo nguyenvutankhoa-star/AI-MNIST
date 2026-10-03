@@ -1,0 +1,84 @@
+THUẬT TOÁN NHẬN DẠNG CHỮ SỐ VIẾT TAY BẰNG CNN
+
+INPUT:
+    Ảnh chữ số viết tay
+
+OUTPUT:
+    Chữ số được dự đoán từ 0 đến 9
+    và xác suất tương ứng
+
+
+BƯỚC 1: TIỀN XỬ LÝ
+
+    Chuyển ảnh về grayscale
+
+    Nếu cần:
+        Đảo màu ảnh
+
+    Resize ảnh về 28 x 28
+
+    Chuẩn hóa pixel:
+        pixel = pixel / 255
+
+    Reshape:
+        (28,28)
+        →
+        (1,28,28,1)
+
+
+BƯỚC 2: TRÍCH XUẤT ĐẶC TRƯNG
+
+    Đưa ảnh qua Conv2D lần 1
+
+    Chuẩn hóa bằng BatchNormalization
+
+    Giảm kích thước bằng MaxPooling
+
+    Đưa kết quả qua Conv2D lần 2
+
+    Chuẩn hóa bằng BatchNormalization
+
+    Giảm kích thước bằng MaxPooling
+
+
+BƯỚC 3: CHUYỂN ĐỔI ĐẶC TRƯNG
+
+    Flatten các feature map
+
+    Áp dụng Dropout 25%
+
+
+BƯỚC 4: PHÂN LOẠI
+
+    Đưa đặc trưng vào Dense 10 neuron
+
+    Áp dụng Softmax
+
+    Tạo xác suất cho 10 lớp:
+
+        P(0)
+        P(1)
+        P(2)
+        ...
+        P(9)
+
+
+BƯỚC 5: CHỌN KẾT QUẢ
+
+    Tìm lớp có xác suất lớn nhất
+
+    predicted_digit = argmax(probabilities)
+
+    Lấy 5 lớp có xác suất cao nhất
+
+    Hiển thị Top-5
+
+
+BƯỚC 6: HIỂN THỊ
+
+    Hiển thị:
+        Chữ số dự đoán
+        Độ tin cậy
+        Biểu đồ xác suất Top-5
+
+KẾT THÚC
