@@ -1,0 +1,15 @@
+# Bỏ qua các file thực thi (binary) sinh ra khi biên dịch C/C++
+*.exe
+*.out
+*.o
+
+# Bỏ qua thư mục môi trường ảo Python
+.venv/
+venv/
+__pycache__/
+
+# Bỏ qua file cấu hình riêng của VS Code
+.vscode/
+
+# Bỏ qua các file tạm của Microsoft Office / Word (file có dấu ~$ ở đầu)
+~$*

@@ -156,17 +156,17 @@ int main() {
     // BƯỚC 2: NẠP TRỌNG SỐ TỪ FILE
     // ---------------------------------------------------------
     printf("Dang nap trong so...\n");
-    load_data("input_image.txt", img, 784); // Ảnh đầu vào
+    load_data("data/input_image.txt", img, 784); // Ảnh đầu vào
     
-    load_data("conv1_weights.txt", w1, 72); load_data("conv1_bias.txt", b1, 8);
-    load_data("bn1_gamma.txt", gamma1, 8);  load_data("bn1_beta.txt", beta1, 8);
-    load_data("bn1_mean.txt", mean1, 8);    load_data("bn1_var.txt", var1, 8);
+    load_data("weights/conv1_weights.txt", w1, 72); load_data("weights/conv1_bias.txt", b1, 8);
+    load_data("weights/bn1_gamma.txt", gamma1, 8);  load_data("weights/bn1_beta.txt", beta1, 8);
+    load_data("weights/bn1_mean.txt", mean1, 8);    load_data("weights/bn1_var.txt", var1, 8);
 
-    load_data("conv2_weights.txt", w2, 1152); load_data("conv2_bias.txt", b2, 16);
-    load_data("bn2_gamma.txt", gamma2, 16);   load_data("bn2_beta.txt", beta2, 16);
-    load_data("bn2_mean.txt", mean2, 16);     load_data("bn2_var.txt", var2, 16);
+    load_data("weights/conv2_weights.txt", w2, 1152); load_data("weights/conv2_bias.txt", b2, 16);
+    load_data("weights/bn2_gamma.txt", gamma2, 16);   load_data("weights/bn2_beta.txt", beta2, 16);
+    load_data("weights/bn2_mean.txt", mean2, 16);     load_data("weights/bn2_var.txt", var2, 16);
 
-    load_data("dense_weights.txt", w_dense, 4000); load_data("dense_bias.txt", b_dense, 10);
+    load_data("weights/dense_weights.txt", w_dense, 4000); load_data("weights/dense_bias.txt", b_dense, 10);
 
     // ---------------------------------------------------------
     // BƯỚC 3: THỰC THI LAN TRUYỀN THUẬN (INFERENCE)
