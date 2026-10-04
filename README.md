@@ -1,10 +1,16 @@
+# AI-MNIST: Hardware-Friendly CNN Accelerator 🚀
+
+Dự án này tập trung vào việc nghiên cứu, phát triển và tối ưu hóa mạng nơ-ron tích chập (CNN) để phân loại bộ dữ liệu chữ số viết tay MNIST. Điểm cốt lõi của dự án không chỉ dừng lại ở việc huấn luyện mô hình phần mềm mà là xây dựng một hệ thống **Hardware-friendly** (thân thiện với phần cứng) nhằm chuẩn bị cho quá trình thiết kế và triển khai xuống vi mạch chuyên dụng (FPGA / ASIC).
+
+## Mô phỏng qua Netron.app và trực quan hóa dự án
 <div align="center">
   <img src="mnist_cnn_model.keras.png" width="100%">[cite: 24]
 </div>
 
-# AI-MNIST: Hardware-Friendly CNN Accelerator 🚀
+<div align="center">
+  <img src="mohinh.jpg" width="100%">[cite: 25]
+</div>
 
-Dự án này tập trung vào việc nghiên cứu, phát triển và tối ưu hóa mạng nơ-ron tích chập (CNN) để phân loại bộ dữ liệu chữ số viết tay MNIST. Điểm cốt lõi của dự án không chỉ dừng lại ở việc huấn luyện mô hình phần mềm mà là xây dựng một hệ thống **Hardware-friendly** (thân thiện với phần cứng) nhằm chuẩn bị cho quá trình thiết kế và triển khai xuống vi mạch chuyên dụng (FPGA / ASIC).
 
 ## 📌 Các tính năng và Giai đoạn cốt lõi
 
