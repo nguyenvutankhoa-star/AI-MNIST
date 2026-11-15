@@ -5,14 +5,16 @@
             "label": "C/C++: gcc.exe build active file",
             "command": "C:/msys64/ucrt64/bin/gcc.exe",
             "args": [
+                "-O3",
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-lm"
             ],
             "options": {
-                "cwd": "C:/msys64/ucrt64/bin"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": [
                 "$gcc"
