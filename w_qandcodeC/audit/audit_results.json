@@ -1,0 +1,297 @@
+{
+  "model_input_shape": [
+    null,
+    28,
+    28,
+    1
+  ],
+  "dense_shape": [
+    400,
+    10
+  ],
+  "images_equal_mnist": true,
+  "labels_equal_mnist": true,
+  "test_images_int8_bytes": 9000000,
+  "expected_int8_bytes": 7840000,
+  "model_layers": [
+    {
+      "type": "Conv2D",
+      "name": "conv2d_2",
+      "activation": "relu",
+      "epsilon": null
+    },
+    {
+      "type": "BatchNormalization",
+      "name": "batch_normalization_2",
+      "activation": null,
+      "epsilon": 0.001
+    },
+    {
+      "type": "MaxPooling2D",
+      "name": "max_pooling2d_2",
+      "activation": null,
+      "epsilon": null
+    },
+    {
+      "type": "Conv2D",
+      "name": "conv2d_3",
+      "activation": "relu",
+      "epsilon": null
+    },
+    {
+      "type": "BatchNormalization",
+      "name": "batch_normalization_3",
+      "activation": null,
+      "epsilon": 0.001
+    },
+    {
+      "type": "MaxPooling2D",
+      "name": "max_pooling2d_3",
+      "activation": null,
+      "epsilon": null
+    },
+    {
+      "type": "Flatten",
+      "name": "flatten_1",
+      "activation": null,
+      "epsilon": null
+    },
+    {
+      "type": "Dropout",
+      "name": "dropout_1",
+      "activation": null,
+      "epsilon": null
+    },
+    {
+      "type": "Dense",
+      "name": "dense_1",
+      "activation": "softmax",
+      "epsilon": null
+    }
+  ],
+  "weight_comparisons": [
+    {
+      "name": "conv1_weights",
+      "count": 72,
+      "shape": [
+        3,
+        3,
+        1,
+        8
+      ],
+      "max_absolute_error": 4.76837158203125e-07,
+      "equal_after_6_decimal_export": true
+    },
+    {
+      "name": "conv1_bias",
+      "count": 8,
+      "shape": [
+        8
+      ],
+      "max_absolute_error": 3.688037395477295e-07,
+      "equal_after_6_decimal_export": true
+    },
+    {
+      "name": "bn1_gamma",
+      "count": 8,
+      "shape": [
+        8
+      ],
+      "max_absolute_error": 4.76837158203125e-07,
+      "equal_after_6_decimal_export": true
+    },
+    {
+      "name": "bn1_beta",
+      "count": 8,
+      "shape": [
+        8
+      ],
+      "max_absolute_error": 3.8743019104003906e-07,
+      "equal_after_6_decimal_export": true
+    },
+    {
+      "name": "bn1_mean",
+      "count": 8,
+      "shape": [
+        8
+      ],
+      "max_absolute_error": 4.246830940246582e-07,
+      "equal_after_6_decimal_export": true
+    },
+    {
+      "name": "bn1_var",
+      "count": 8,
+      "shape": [
+        8
+      ],
+      "max_absolute_error": 4.721805453300476e-07,
+      "equal_after_6_decimal_export": true
+    },
+    {
+      "name": "conv2_weights",
+      "count": 1152,
+      "shape": [
+        3,
+        3,
+        8,
+        16
+      ],
+      "max_absolute_error": 5.066394805908203e-07,
+      "equal_after_6_decimal_export": true
+    },
+    {
+      "name": "conv2_bias",
+      "count": 16,
+      "shape": [
+        16
+      ],
+      "max_absolute_error": 4.76837158203125e-07,
+      "equal_after_6_decimal_export": true
+    },
+    {
+      "name": "bn2_gamma",
+      "count": 16,
+      "shape": [
+        16
+      ],
+      "max_absolute_error": 4.172325134277344e-07,
+      "equal_after_6_decimal_export": true,
+      "leading_space_duplicate_equal": true
+    },
+    {
+      "name": "bn2_beta",
+      "count": 16,
+      "shape": [
+        16
+      ],
+      "max_absolute_error": 4.76837158203125e-07,
+      "equal_after_6_decimal_export": true,
+      "leading_space_duplicate_equal": true
+    },
+    {
+      "name": "bn2_mean",
+      "count": 16,
+      "shape": [
+        16
+      ],
+      "max_absolute_error": 5.066394805908203e-07,
+      "equal_after_6_decimal_export": true,
+      "leading_space_duplicate_equal": true
+    },
+    {
+      "name": "bn2_var",
+      "count": 16,
+      "shape": [
+        16
+      ],
+      "max_absolute_error": 4.917383193969727e-07,
+      "equal_after_6_decimal_export": true,
+      "leading_space_duplicate_equal": true
+    },
+    {
+      "name": "dense_weights",
+      "count": 4000,
+      "shape": [
+        400,
+        10
+      ],
+      "max_absolute_error": 5.066394805908203e-07,
+      "equal_after_6_decimal_export": true,
+      "leading_space_duplicate_equal": true
+    },
+    {
+      "name": "dense_bias",
+      "count": 10,
+      "shape": [
+        10
+      ],
+      "max_absolute_error": 4.991888999938965e-07,
+      "equal_after_6_decimal_export": true,
+      "leading_space_duplicate_equal": true
+    }
+  ],
+  "keras_saved": {
+    "count": 10000,
+    "correct": 9869,
+    "accuracy": 0.9869
+  },
+  "txt_relu_bn": {
+    "count": 10000,
+    "correct": 9869,
+    "accuracy": 0.9869
+  },
+  "txt_bn_relu": {
+    "count": 10000,
+    "correct": 9037,
+    "accuracy": 0.9037
+  },
+  "keras_vs_correct_txt_prediction_mismatches": 0,
+  "correct_vs_wrong_order_prediction_mismatches": 944,
+  "first64_max_softmax_error": 0.0001398324966430664,
+  "numpy_existing": {
+    "count": 10000,
+    "correct": 9869,
+    "accuracy": 0.9869
+  },
+  "numpy_vs_keras_prediction_mismatches": 0,
+  "golden_C_bn_relu": {
+    "correct": 9037,
+    "accuracy": 0.9037,
+    "reference_mismatches": 0
+  },
+  "golden_C_relu_bn": {
+    "correct": 9869,
+    "accuracy": 0.9869,
+    "reference_mismatches": 0
+  },
+  "training_notebook_execution_counts": {
+    "0": null,
+    "1": 16,
+    "2": 17,
+    "3": 18,
+    "4": 19,
+    "5": 20,
+    "6": 25,
+    "7": 26,
+    "8": 29,
+    "9": 15,
+    "10": 16,
+    "11": 17,
+    "12": 18,
+    "13": 19,
+    "14": 20,
+    "15": 21,
+    "16": 22,
+    "17": null,
+    "18": 23,
+    "19": 24,
+    "20": 10
+  },
+  "quantized_existing": {
+    "PTQ": {
+      "correct": 9051,
+      "count": 10000,
+      "accuracy": 0.9051,
+      "reference_mismatches": 0,
+      "strict_gcc_build": "passed",
+      "invalid_input_checks": "passed"
+    },
+    "QAT": {
+      "correct": 9879,
+      "count": 10000,
+      "accuracy": 0.9879,
+      "reference_mismatches": 0,
+      "strict_gcc_build": "passed",
+      "invalid_input_checks": "passed"
+    },
+    "Golden_C": {
+      "correct": 9037,
+      "count": 10000,
+      "accuracy": 0.9037,
+      "folded_float_mismatches": 0
+    },
+    "layer1_changed_weights": 9,
+    "layer2_changed_weights": 864,
+    "layer3_changed_weights": 3147
+  }
+}

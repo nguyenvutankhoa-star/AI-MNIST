@@ -1,0 +1,24 @@
+QAT V2: Conv-ReLU-BN, signed BN(0) thresholds; default=10000 test images
+QAT: 1000/10000, accuracy=98.9000%
+QAT: 2000/10000, accuracy=98.7000%
+QAT: 3000/10000, accuracy=98.5000%
+QAT: 4000/10000, accuracy=98.5250%
+QAT: 5000/10000, accuracy=98.5800%
+QAT: 6000/10000, accuracy=98.7500%
+QAT: 7000/10000, accuracy=98.7857%
+QAT: 8000/10000, accuracy=98.9375%
+QAT: 9000/10000, accuracy=99.0222%
+QAT: 10000/10000, accuracy=98.9600%
+QAT correct=9896/10000 accuracy=98.9600% CPU_seconds=1.315
+QAT V2: Conv-ReLU-BN, signed BN(0) thresholds; default=10000 test images
+Logit[0] INT32=5019 real=2.450684
+Logit[1] INT32=-20874 real=-10.192383
+Logit[2] INT32=11679 real=5.702637
+Logit[3] INT32=16651 real=8.130371
+Logit[4] INT32=-23249 real=-11.352051
+Logit[5] INT32=-6822 real=-3.331055
+Logit[6] INT32=-28746 real=-14.036133
+Logit[7] INT32=39060 real=19.072266
+Logit[8] INT32=-3169 real=-1.547363
+Logit[9] INT32=10993 real=5.367676
+QAT prediction: 7

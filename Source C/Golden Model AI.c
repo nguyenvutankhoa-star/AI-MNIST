@@ -125,7 +125,7 @@ int main() {
     // ---------------------------------------------------------
     float *img = (float*)malloc(28 * 28 * 1 * sizeof(float));
     
-    // Lớp 1 (Conv -> BN -> ReLU -> Pool)
+    // Lớp 1 (Conv -> ReLU -> BN -> Pool)
     float *w1 = (float*)malloc(3 * 3 * 1 * 8 * sizeof(float));
     float *b1 = (float*)malloc(8 * sizeof(float));
     float *gamma1 = (float*)malloc(8 * sizeof(float));
@@ -136,7 +136,7 @@ int main() {
     float *conv1_out = (float*)malloc(26 * 26 * 8 * sizeof(float));
     float *pool1_out = (float*)malloc(13 * 13 * 8 * sizeof(float));
 
-    // Lớp 2 (Conv -> BN -> ReLU -> Pool)
+    // Lớp 2 (Conv -> ReLU -> BN -> Pool)
     float *w2 = (float*)malloc(3 * 3 * 8 * 16 * sizeof(float));
     float *b2 = (float*)malloc(16 * sizeof(float));
     float *gamma2 = (float*)malloc(16 * sizeof(float));
@@ -175,14 +175,14 @@ int main() {
     
     // Khối 1
     conv2d(img, conv1_out, w1, b1, 28, 28, 1, 8, 3, 3);
-    batch_norm_inplace(conv1_out, gamma1, beta1, mean1, var1, 5408, 8);
     relu_inplace(conv1_out, 5408);
+    batch_norm_inplace(conv1_out, gamma1, beta1, mean1, var1, 5408, 8);
     max_pool2d(conv1_out, pool1_out, 26, 26, 8);
 
     // Khối 2
     conv2d(pool1_out, conv2_out, w2, b2, 13, 13, 8, 16, 3, 3);
-    batch_norm_inplace(conv2_out, gamma2, beta2, mean2, var2, 1936, 16);
     relu_inplace(conv2_out, 1936);
+    batch_norm_inplace(conv2_out, gamma2, beta2, mean2, var2, 1936, 16);
     max_pool2d(conv2_out, pool2_out, 11, 11, 16);
 
     // Khối Dense (400 đặc trưng -> 10 nhãn)

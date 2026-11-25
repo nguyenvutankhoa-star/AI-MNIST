@@ -1,0 +1,22 @@
+PTQ: 1000/10000, accuracy=85.7000%
+PTQ: 2000/10000, accuracy=86.5500%
+PTQ: 3000/10000, accuracy=86.9000%
+PTQ: 4000/10000, accuracy=87.3000%
+PTQ: 5000/10000, accuracy=87.3400%
+PTQ: 6000/10000, accuracy=88.3667%
+PTQ: 7000/10000, accuracy=88.9143%
+PTQ: 8000/10000, accuracy=89.7625%
+PTQ: 9000/10000, accuracy=90.4333%
+PTQ: 10000/10000, accuracy=90.5100%
+PTQ correct=9051/10000 accuracy=90.5100% CPU_seconds=0.790
+Logit[0] INT32=-445 real=-0.217285
+Logit[1] INT32=-24456 real=-11.941406
+Logit[2] INT32=10869 real=5.307129
+Logit[3] INT32=12828 real=6.263672
+Logit[4] INT32=-17852 real=-8.716797
+Logit[5] INT32=-3948 real=-1.927734
+Logit[6] INT32=-19741 real=-9.639160
+Logit[7] INT32=24006 real=11.721680
+Logit[8] INT32=1290 real=0.629883
+Logit[9] INT32=3716 real=1.814453
+PTQ prediction: 7

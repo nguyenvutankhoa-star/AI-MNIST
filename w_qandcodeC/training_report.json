@@ -1,0 +1,73 @@
+{
+  "format_version": 2,
+  "architecture": "Conv-ReLU-BN-Pool-Conv-ReLU-BN-Pool-Dense (Keras)",
+  "implementation": "BN-folded affine with signed BN(0) threshold, not ReLU(0)",
+  "tensorflow": "2.21.0",
+  "seed": 2026,
+  "train_count": 55000,
+  "validation_count": 5000,
+  "calibration_count": 1024,
+  "qat_epochs": 3,
+  "best_epoch": 3,
+  "qat_history": [
+    {
+      "epoch": 1,
+      "mean_loss": 0.030355691371572225,
+      "validation_accuracy": 0.9892
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 0.02818066255259869,
+      "validation_accuracy": 0.9892
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 0.026947445150323993,
+      "validation_accuracy": 0.9894
+    }
+  ],
+  "scales": {
+    "input": -6,
+    "weights": [
+      -3,
+      -7,
+      -8
+    ],
+    "activations": [
+      -3,
+      -3
+    ]
+  },
+  "mnist_sha256": "731c5ac602752760c8e48fbffcf8c3b850d9dc2a2aedcf2cc48468fc17b673d1",
+  "sources_sha256": {
+    "weights\\bn1_beta.txt": "d217047630fdc033f2e921265dd0e6617281414918c2e25afd2bf1266cf689bc",
+    "weights\\bn1_gamma.txt": "cd6245bdbf6c5dbee5d4710744e3efd06b053dd4d41dd306a7df6be6395427d0",
+    "weights\\bn1_mean.txt": "a5a3d805fb989735004ef78dc38e99ffef56c44cf27a0998f1688ac00e5059a9",
+    "weights\\bn1_var.txt": "bd001c058498abfb78707e2badfda4ff636289b006eedd419e1a7f70b4fea3f4",
+    "weights\\bn2_beta.txt": "49f498a4bb6fd61736d7b166c360dc6cbafb4b3e05c0868558f85eed718ff628",
+    "weights\\bn2_gamma.txt": "510298a1fa29e5223f72b539c0f7a15ee0399a30e3873822bb4026587beb9572",
+    "weights\\bn2_mean.txt": "57febb2717e5f44b643de58e6923b8227d268d85d814be349e28ccd30a4365d3",
+    "weights\\bn2_var.txt": "d09950b020f08a64fa0135187a5f7a7c230123d2e7b01879c7e1ce535560d2b2",
+    "weights\\conv1_bias.txt": "cc0aa4c1d49b9993666ccdaf77a3fe659c9ac969450c57e4d8e2d171e7f88464",
+    "weights\\conv1_weights.txt": "4d52569492b4385fbeae0c1cb4444ea52e13e7ad5b3edf4ee0cf2dabbd9e45d6",
+    "weights\\conv2_bias.txt": "b7e64f28a504c6d37073c80667668f99f8be7c3b543c80d38153271a34b9ee78",
+    "weights\\conv2_weights.txt": "eb7dbb73b06d16e6f9d70cd0eb691fae897381d68109fa8e480a31ecc898785a",
+    "weights\\dense_bias.txt": "5ea15062df656b6497642859ff7a024e5cdcd0398c5b5522d86c31d503d22b84",
+    "weights\\dense_weights.txt": "2c260c586c83c1115cab5b8945cda72e9441a52163d55c6fd8edf73532778fb7"
+  },
+  "Golden_float": {
+    "accuracy": 0.9869,
+    "correct": 9869,
+    "count": 10000
+  },
+  "PTQ": {
+    "accuracy": 0.9874,
+    "correct": 9874,
+    "count": 10000
+  },
+  "QAT": {
+    "accuracy": 0.9896,
+    "correct": 9896,
+    "count": 10000
+  }
+}

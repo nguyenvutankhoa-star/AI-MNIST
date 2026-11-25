@@ -1,0 +1,24 @@
+PTQ V2: Conv-ReLU-BN, signed BN(0) thresholds; default=10000 test images
+PTQ: 1000/10000, accuracy=98.3000%
+PTQ: 2000/10000, accuracy=98.1000%
+PTQ: 3000/10000, accuracy=98.1667%
+PTQ: 4000/10000, accuracy=98.2000%
+PTQ: 5000/10000, accuracy=98.2400%
+PTQ: 6000/10000, accuracy=98.4667%
+PTQ: 7000/10000, accuracy=98.5571%
+PTQ: 8000/10000, accuracy=98.7250%
+PTQ: 9000/10000, accuracy=98.8222%
+PTQ: 10000/10000, accuracy=98.7400%
+PTQ correct=9874/10000 accuracy=98.7400% CPU_seconds=1.338
+PTQ V2: Conv-ReLU-BN, signed BN(0) thresholds; default=10000 test images
+Logit[0] INT32=3696 real=1.804688
+Logit[1] INT32=-18740 real=-9.150391
+Logit[2] INT32=13962 real=6.817383
+Logit[3] INT32=15569 real=7.602051
+Logit[4] INT32=-21589 real=-10.541504
+Logit[5] INT32=-8194 real=-4.000977
+Logit[6] INT32=-26704 real=-13.039062
+Logit[7] INT32=38738 real=18.915039
+Logit[8] INT32=-3075 real=-1.501465
+Logit[9] INT32=10807 real=5.276855
+PTQ prediction: 7

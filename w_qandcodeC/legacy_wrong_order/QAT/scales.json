@@ -1,0 +1,52 @@
+{
+  "tag": "QAT",
+  "zero_point": 0,
+  "qmin": -127,
+  "qmax": 127,
+  "rounding": "nearest, ties away from zero",
+  "layers": [
+    {
+      "input_exp": -6,
+      "weight_exp": -3,
+      "output_exp": -3,
+      "bias_exp": -9,
+      "weight_shape": [
+        3,
+        3,
+        1,
+        8
+      ],
+      "bias_shape": [
+        8
+      ]
+    },
+    {
+      "input_exp": -3,
+      "weight_exp": -7,
+      "output_exp": -3,
+      "bias_exp": -10,
+      "weight_shape": [
+        3,
+        3,
+        8,
+        16
+      ],
+      "bias_shape": [
+        16
+      ]
+    },
+    {
+      "input_exp": -3,
+      "weight_exp": -8,
+      "output_exp": -11,
+      "bias_exp": -11,
+      "weight_shape": [
+        400,
+        10
+      ],
+      "bias_shape": [
+        10
+      ]
+    }
+  ]
+}

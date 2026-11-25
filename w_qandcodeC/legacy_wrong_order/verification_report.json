@@ -1,0 +1,27 @@
+{
+  "PTQ": {
+    "correct": 9051,
+    "count": 10000,
+    "accuracy": 0.9051,
+    "reference_mismatches": 0,
+    "strict_gcc_build": "passed",
+    "invalid_input_checks": "passed"
+  },
+  "QAT": {
+    "correct": 9879,
+    "count": 10000,
+    "accuracy": 0.9879,
+    "reference_mismatches": 0,
+    "strict_gcc_build": "passed",
+    "invalid_input_checks": "passed"
+  },
+  "Golden_C": {
+    "correct": 9037,
+    "count": 10000,
+    "accuracy": 0.9037,
+    "folded_float_mismatches": 0
+  },
+  "layer1_changed_weights": 9,
+  "layer2_changed_weights": 864,
+  "layer3_changed_weights": 3147
+}

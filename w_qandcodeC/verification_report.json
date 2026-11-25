@@ -1,0 +1,30 @@
+{
+  "signed_rounding_and_negative_gamma_checks": "passed",
+  "PTQ": {
+    "correct": 9874,
+    "count": 10000,
+    "accuracy": 0.9874,
+    "reference_mismatches": 0,
+    "strict_gcc_build": "passed",
+    "invalid_input_checks": "passed",
+    "default_full_test": "passed"
+  },
+  "QAT": {
+    "correct": 9896,
+    "count": 10000,
+    "accuracy": 0.9896,
+    "reference_mismatches": 0,
+    "strict_gcc_build": "passed",
+    "invalid_input_checks": "passed",
+    "default_full_test": "passed"
+  },
+  "Golden_C": {
+    "correct": 9869,
+    "count": 10000,
+    "accuracy": 0.9869,
+    "folded_float_mismatches": 0
+  },
+  "layer1_changed_weights": 5,
+  "layer2_changed_weights": 603,
+  "layer3_changed_weights": 2789
+}
